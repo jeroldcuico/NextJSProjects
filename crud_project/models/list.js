@@ -10,6 +10,6 @@ const listSchema = new Schema(
     }
 );
 
-const List = mongoose.models.List || mongoose.model("List", listSchema);
+const Lists = mongoose.models.List || mongoose.model("List", listSchema);
 
-export default List;
+export default Lists;
