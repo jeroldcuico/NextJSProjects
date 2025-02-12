@@ -25,16 +25,16 @@ export default async function () {
     return (
         <>
             {lists.map((t) =>
-                <div className="p-4 border border-slate-800 flex justify-between gap-2">
+                <div className="p-4 border border-slate-800 flex justify-between gap-2 my-3">
                     <div>
                         <h2 className="font-bold text-2xl">{t.title}</h2>
                         <div>{t.description}</div>
                     </div>
                     <div className="flex gap-2 items-start">
-                        <Link href={`/editData/${t.id}`}>
+                        <Link href={`/editData/${t._id}`}>
                             <HiPencilAlt size={25} />
                         </Link>
-                        <RemoveBtn />
+                        <RemoveBtn id={t._id} />
                     </div>
                 </div>
             )}
