@@ -1,6 +1,5 @@
-import React from "react";
 import EmbedForm from "../components/EmbedForm";
 
-export default function page() {
+export default function addEmbed() {
   return <EmbedForm />;
 }
